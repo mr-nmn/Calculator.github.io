@@ -1,21 +1,26 @@
-*{
+* {
   margin: 0;
   padding: 0;
   outline: none;
   box-sizing: border-box;
 }
-body{
+
+body {
   font-family: montserrat;
   display: flex;
   text-align: center;
-  min-height: 50vh;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
-.center{
+
+.center {
   width: 350px;
   background: black;
   border-radius: 20px;
 }
-input[type="text"]{
+
+input[type="text"] {
   height: 60px;
   width: 300px;
   margin-top: 40px;
@@ -26,15 +31,17 @@ input[type="text"]{
   font-weight: bold;
   text-align: right;
   padding-right: 20px;
-  background: linear-gradient(#d1dce0,#dfe6e9);
+  background: linear-gradient(#d1dce0, #dfe6e9);
 }
-form .buttons{
+
+form .buttons {
   width: 300px;
   margin: 10px 25px 0 25px;
   padding: 10px 0;
   font-weight: bolder;
 }
-input[type="button"]{
+
+input[type="button"] {
   width: 58px;
   height: 55px;
   margin: 5px;
@@ -44,28 +51,32 @@ input[type="button"]{
   border: 1px solid #d9d9d9;
   background: linear-gradient(#d9d9d9, #bfbfbf);
 }
-input[type="button"]:hover{
+
+input[type="button"]:hover {
   transition: .5s;
   background: linear-gradient(#bfbfbf, #e13b3b);
 }
-input#clear{
+
+input#clear {
   background: #ff1a1a;
   border: 1px solid #cc0000;
   color: white;
 }
-input#clear:hover{
-    background: linear-gradient(#ff1a1a, #bfbfbf);
+
+input#clear:hover {
+  background: linear-gradient(#ff1a1a, #bfbfbf);
 }
-input#equal{
+
+input#equal {
   width: 275px;
   margin: 10px 0 10px 0;
   font-size: 30px;
   color: white;
   background: #ff3d00;
-  border: 1px solid #b32a00;
-}
-input#equal:hover{
-    background: linear-gradient(#ff1a1a, #bfbfbf);
-
+  border: 1px solid #ff3d00;
 }
 
+input#equal:hover {
+  background: linear-gradient(#b32a00, #bfbfbf);
+
+}

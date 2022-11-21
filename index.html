@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,44 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="center">
         <form name="forms">
-           <input type="text" id="display" name="display">
-           <div class="buttons">
-              <input type="button" id="seven" value="7">
-              <input type="button" id="eight" value="8">
-              <input type="button" id="nine" value="9">
-              <input type="button" id="divide" value="/"><br>
-              <input type="button" id="four" value="4">
-              <input type="button" id="five" value="5">
-              <input type="button" id="six" value="6">
-              <input type="button" id="multi" value="*"><br>
-              <input type="button" id="one" value="1">
-              <input type="button" id="two" value="2">
-              <input type="button" id="three" value="3">
-              <input type="button" id="subs" value="-"><br>
-              <input type="button" id="dot" value=".">
-              <input type="button" id="zero" value="0">
-              <input type="button" id="add" value="+">
-              <input type="button" id="clear" value="C"><br>
-              <input type="button" id="equal" value="=">
-           </div>
+            <input type="text" id="display" name="display">
+            <div class="buttons">
+                <input onclick="fn('7')" type="button" id="seven" value="7">
+                <input onclick="fn('8')" type="button" id="eight" value="8">
+                <input onclick="fn('9')" type="button" id="nine" value="9">
+                <input onclick="fn('/')" type="button" id="divide" value="/"><br>
+                <input onclick="fn('4')" type="button" id="four" value="4">
+                <input onclick="fn('5')" type="button" id="five" value="5">
+                <input onclick="fn('6')" type="button" id="six" value="6">
+                <input onclick="fn('*')" type="button" id="multi" value="*"><br>
+                <input onclick="fn('1')" type="button" id="one" value="1">
+                <input onclick="fn('2')" type="button" id="two" value="2">
+                <input onclick="fn('3')" type="button" id="three" value="3">
+                <input onclick="fn('-')" type="button" id="subs" value="-"><br>
+                <input onclick="fn('.')" type="button" id="dot" value=".">
+                <input onclick="fn('0')" type="button" id="zero" value="0">
+                <input onclick="fn('+')" type="button" id="add" value="+">
+                <input onclick="clr()" type="button" id="clear" value="C"><br>
+                <input type="button" id="equal" value="=">
+            </div>
         </form>
-     </div>
     </div>
+    </div>
+
+
+
+    <script>
+        function fn(a) {
+            document.getElementById("display").value += a;
+        }
+        function clr() {
+            document.getElementById("display").value = "";
+        }
+    </script>
 </body>
+
 </html>
